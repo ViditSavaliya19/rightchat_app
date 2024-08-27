@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "302971606047",
+    "project_id": "rightchat-4306d",
+    "storage_bucket": "rightchat-4306d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302971606047:android:ac0f64156a8bccfb8ef12a",
+        "android_client_info": {
+          "package_name": "com.chat.rightchat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302971606047-evacnioa5qn62lc4al8k1oivfnvaeoig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chat.rightchat_app",
+            "certificate_hash": "2f279b57dd789f3525993b8c8fa4994c58b9a249"
+          }
+        },
+        {
+          "client_id": "302971606047-ie7cf53p87k0rs25dh2m6qd55pg7mc8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvas7dFuEqx5xQ1PNp0xVsgDEjTyCB7jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302971606047-ie7cf53p87k0rs25dh2m6qd55pg7mc8a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "302971606047-1752seir9u6jlrcd6ceg4rq56njb5fqp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rightchatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
