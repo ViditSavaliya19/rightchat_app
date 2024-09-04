@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rightchat_app/screen/login/controller/login_controller.dart';
 import 'package:rightchat_app/utils/helper/auth_helper.dart';
+import 'package:rightchat_app/utils/helper/db_helper.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -12,7 +14,7 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
   TextEditingController txtEmail = TextEditingController();
   TextEditingController txtPassword = TextEditingController();
-
+  LoginController controller = Get.put(LoginController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +69,8 @@ class _SignInScreenState extends State<SignInScreen> {
                     .signInEmailPassword(txtEmail.text, txtPassword.text);
                 if(msg =="Success")
                   {
-                    Get.offAndToNamed('/home');
+                    AuthHelper.helper.checkUser();
+                    Get.offAndToNamed('/profile');
                     Get.snackbar("Success", "RightApp");
                   }
                 else
@@ -85,7 +88,8 @@ class _SignInScreenState extends State<SignInScreen> {
                 String msg = await AuthHelper.helper.signWithGoogle();
                 if(msg =="Success")
                 {
-                  Get.offAndToNamed('/home');
+                  AuthHelper.helper.checkUser();
+                  Get.offAndToNamed('/profile');
                   Get.snackbar("Success", "RightApp");
                 }
                 else
